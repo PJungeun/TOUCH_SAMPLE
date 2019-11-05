@@ -1,0 +1,6 @@
+<body  style='background-color:#070c21;'>
+    <form action="{% url 'count' %}">
+    <div style="text-align:center">
+        <input onclick="location.href='{{post_pk}}/like/'" type="image" src="{{post.image.url}}" value="Count" style="width:800px">
+    </div>
+    </form>
