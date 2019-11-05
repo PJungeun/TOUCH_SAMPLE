@@ -1,12 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post
-
 # Create your views here.
 
 
 def main(request):
     posts=Post.objects.all()
-    return render(request, 'count/main.html')
+    return render(request, 'count/main.html',{'posts':posts})
 
 
 def like(request, post_pk):

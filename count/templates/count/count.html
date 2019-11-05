@@ -1,4 +1,4 @@
-<body  style='background-color:#070c21;'>
+<body  style='background-color:#080E22;'>
 
   <div class="button-7" style='margin-top:20px;'>
     <div class="eff-7"></div>
@@ -6,12 +6,12 @@
   </div>
 
     <div style="text-align:center">
-    <br><br><br><br><br><br>
-    <p style=' font-size:300px; color:white;'> {{ cnt }}</p><p style='font-size:50px; color:white;'>번째 터치입니다</p>
-  
+    <br><br><br><br>
+    <p class="test" style=' font-size:250px; color:white;'><span> {{ cnt }}</span></p><p style='font-size:68px; color:white;'>번째 터치입니다</p>
+ 
     </div>
 
-    <div style="margin:auto;color:white;font-size:60px; text-align:center">
+    <div style="margin:auto;color:white;font-size:50px; text-align:center">
          <script language="JavaScript">
           <!--
           function random_text()
@@ -28,7 +28,7 @@
           random_text[number++] = "Random Text8"
          
           var random_number = Math.floor(Math.random() * number);
-          // Write out the random text to the browser
+
           document.write(random_text[random_number]);
           --></script>
     </div>
@@ -85,7 +85,7 @@ h1{
   font-family: 'Oswald', sans-serif;
   font-weight:normal;
   font-size:24px;
-  color:#34495e;
+  color:#080e22;
   text-align:center;
   margin:0 auto 40px 0;
 }
@@ -115,5 +115,31 @@ footer a{
   font-size:14px;
   color:#34495e;
 }
+
+<!--글씨 그라데이션-->
+body {
+  background: #444;
+  text-align: center;
+  color: #fff;
+}
+
+.test {
+  display: inline-block;
+  margin: 50px auto 0;
+  padding: 10px 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.test span {
+  background: linear-gradient(to bottom, #000000,#FFFFFF, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
 </style>
 </body>

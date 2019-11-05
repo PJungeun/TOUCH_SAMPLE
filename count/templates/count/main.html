@@ -1,6 +1,18 @@
-<body  style='background-color:#070c21;'>
+{% load staticfiles %}
+
+<body  style='background-color:#080E22'>
+    {% for post in posts %}
     <form action="{% url 'count' %}">
-    <div style="text-align:center">
-        <input onclick="location.href='{{post_pk}}/like/'" type="image" src="{{post.image.url}}" value="Count" style="width:800px">
-    </div>
+    <br><br><br>
+        <div style="text-align:center">
+            <input class="btn" onclick="location.href='{{post_pk}}/like/'" type="image" src="{% static 'touchimg.png' %}" value="Count" style="width:1000px">
+        </div>
+        
     </form>
+    {% endfor %}
+
+<style>
+.btn{
+    border:0;
+    outline:0;
+}
