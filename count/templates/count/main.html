@@ -1,12 +1,18 @@
 {% load staticfiles %}
+<head>
+<link href="https://fonts.googleapis.com/css?family=Jua&display=swap?sdss" rel="stylesheet">
 
+</head>
 <body  style='background-color:#080E22'>
     {% for post in posts %}
     <form action="{% url 'count' %}">
-    <br><br><br>
-        <div style="text-align:center">
-            <input class="btn" onclick="location.href='{{post_pk}}/like/'" type="image" src="{% static 'touchimg.png' %}" value="Count" style="width:1000px">
-        </div>
+ 
+    <div style="text-align:center">
+        <!-- <p style='font-size:150px; color:#dbdad8; margin-bottom:0px;'>기호 1번</p>
+        -->
+        <br> <br> <br> <br>  <br> <br> <br> <br> <br>
+        <input class="btn" onclick="location.href='{{post_pk}}/like/'" type="image" src="{% static 'round.png' %}" value="Count" style="width:450px;">
+    </div>
         
     </form>
     {% endfor %}
@@ -16,3 +22,7 @@
     border:0;
     outline:0;
 }
+
+</style>
+
+</body>
